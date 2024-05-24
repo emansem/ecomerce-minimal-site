@@ -252,3 +252,4 @@ catagories  styles
 .slide__radio:checked + .radio__circle::after {
     background-color: #b88e2f;
 }
+

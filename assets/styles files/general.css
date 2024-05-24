@@ -176,6 +176,13 @@ html {
     font-size: 1.2rem;
     margin-top: 2rem;
 }
+.prod__overlay--icons svg {
+    width: 20px;
+    height: 20px;
+    stroke: #f4f5f7;
+    cursor: pointer;
+    transition: all 0.4s;
+}
 .prod__overlay--icons p {
     display: flex;
     align-items: center;
@@ -229,4 +236,76 @@ html {
 .show__btn a:hover {
     background-color: #b88e2f;
     color: #fff;
+}
+
+
+.grid__cols-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    border-bottom: 1px solid #9f9f9f ;
+}
+.footer-header{
+    margin-bottom: 2rem;
+}
+.footer-header h2{
+    font-size: 1.6rem;
+    color: #9f9f9f;
+    font-weight: 600;
+}
+.footer__links p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #9f9f9f;
+
+}
+.footer__links li a{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 2rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 1.6rem;
+    transition: all 0.4s;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif
+}
+.footer__links li a:hover{
+color: #b88e2f;
+}
+.subribe-form{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.subribe-input{
+    width: 100%;
+    border-bottom: 1px solid;
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: #9f9f9f;
+    font-weight: 500;
+}
+.subribe-btn{
+    padding: 1rem 1.2rem;
+    background-color: transparent;
+    border-bottom: 1px solid;
+    font-size: 1.4rem;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+.subribe-input:focus{
+    outline: none;
+}
+.footer-top{
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #9f9f9f ;
+}
+.copy-right p{
+    margin-block: 3rem;
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: 600;
 }
