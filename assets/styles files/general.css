@@ -309,3 +309,96 @@ color: #b88e2f;
     color: #000;
     font-weight: 600;
 }
+.bredcumb{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+    
+    url(/ecomerce-minimal-site/assets/images/shopbrecumb.jpg);
+  
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 321px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   position: relative;
+}
+.bredcumb-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bredcum__nav{
+    display: flex;
+    align-items: center;
+     
+    margin-top: 1rem;
+}
+.bredcum__nav a{
+  font-size: 1.2rem;
+  color: #000;
+}
+.bredcum__nav a svg{
+    height: 18px;
+    display: inline-block;
+  ;
+}
+.filter-section{
+    background-color: #f9f1e7;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1rem;
+}
+.filter__items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 5rem;
+}
+.filter-icons{
+    display: flex;
+    gap: 3rem;
+  
+    border-right: 1px solid #333333;
+    padding: 1rem;
+    cursor: pointer;
+}
+.filter-icons li:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+    
+}
+.filter-section1{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.filter__textbox p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #333333;
+}
+.filter__textbox {
+    display: flex;
+}
+        .filter__item{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .filter__item label{
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+.filter__item select{
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333333;
+    
+}

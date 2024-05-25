@@ -85,10 +85,12 @@ catagories  styles
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+    overflow: hidden;
 }
 .cata__item {
     width: 100%;
     text-align: center;
+    overflow: hidden;
 }
 .cata__item h3 {
     font-size: 1.6rem;
@@ -107,6 +109,10 @@ catagories  styles
     cursor: pointer;
     object-fit: cover;
     border-radius: 2rem;
+    transition: all 0.4s;
+}
+.cata__item img:hover{
+    transform: scale(1.1);
 }
 .cta-section {
     background-color: #fcf8f3;
