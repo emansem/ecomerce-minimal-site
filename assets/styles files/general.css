@@ -301,7 +301,7 @@ color: #b88e2f;
 }
 .footer-top{
     margin-bottom: 2rem;
-    border-bottom: 2px solid #9f9f9f ;
+    border-bottom: 1px solid #9f9f9f ;
 }
 .copy-right p{
     margin-block: 3rem;
@@ -313,7 +313,7 @@ color: #b88e2f;
     background-image: 
     linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
     
-    url(/ecomerce-minimal-site/assets/images/shopbrecumb.jpg);
+    url(/assets/images/shopbrecumb.jpg);
   
    background-position: center;
    background-repeat: no-repeat;
@@ -394,11 +394,82 @@ color: #b88e2f;
             display: flex;
             align-items: center;
             gap: 1rem;
+            text-transform: capitalize;
         }
 .filter__item select{
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    color: #333333;
+    color: #9f9f9f;
+    cursor: pointer;
     
+}
+select {
+    -webkit-appearance: none; /* For Chrome, Safari, and Opera */
+    -moz-appearance: none; /* For Firefox */
+    appearance: none; /* For other browsers */
+   
+    padding-right: 1.5rem; /* Add some padding to the right to make space for the custom arrow */
+}
+select:focus{
+    outline: none;
+}
+
+.shop-nextbtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 2rem;
+    align-items: center;
+}
+.shop-nextbtn a{
+    padding: 1.4rem 2.8rem;
+    border-radius: 0.8rem;
+    font-size: 2rem;
+    color: #333333;
+    background-color: #f9f1e7;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.shop-nextbtn a:active,
+.shop-nextbtn a:focus,
+.shop-nextbtn a:hover{
+    background-color: #b88e2f;
+    color: #fff;
+}
+.shop-footer-top{
+    background-color: #f4f3ea;
+    padding-block: 8rem;
+   
+}
+
+.shop__footer-contents{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+ 
+    gap: 3rem;
+    width: 120rem;
+    margin-inline: auto;
+}
+.shop__footer-content{
+  
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    margin-left: 2rem;
+    
+}
+.shop__footer-content h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333333;
+    line-height: 1.4;
+}
+.shop__footer-content p{
+    font-size: 1.6rem;
+    color: #898989;
+    font-weight: 400;
 }
