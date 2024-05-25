@@ -364,7 +364,10 @@ color: #b88e2f;
     padding: 1rem;
     cursor: pointer;
 }
-.filter-icons li:nth-child(1){
+.filter-icons li:nth-child(1),
+.filter-icons li:nth-child(2)
+
+{
     display: flex;
     align-items: center;
     gap: 1rem;
