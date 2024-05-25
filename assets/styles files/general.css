@@ -238,28 +238,26 @@ html {
     color: #fff;
 }
 
-
-.grid__cols-4{
+.grid__cols-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
-    border-bottom: 1px solid #9f9f9f ;
+    border-bottom: 1px solid #9f9f9f;
 }
-.footer-header{
+.footer-header {
     margin-bottom: 2rem;
 }
-.footer-header h2{
+.footer-header h2 {
     font-size: 1.6rem;
     color: #9f9f9f;
     font-weight: 600;
 }
-.footer__links p{
+.footer__links p {
     font-size: 1.6rem;
     font-weight: 400;
     color: #9f9f9f;
-
 }
-.footer__links li a{
+.footer__links li a {
     display: inline-block;
     position: relative;
     padding-bottom: 2rem;
@@ -269,17 +267,17 @@ html {
     font-size: 1.6rem;
     transition: all 0.4s;
     font-weight: 500;
-    font-family: 'Poppins', sans-serif
+    font-family: 'Poppins', sans-serif;
 }
-.footer__links li a:hover{
-color: #b88e2f;
+.footer__links li a:hover {
+    color: #b88e2f;
 }
-.subribe-form{
+.subribe-form {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-.subribe-input{
+.subribe-input {
     width: 100%;
     border-bottom: 1px solid;
     padding: 1rem;
@@ -287,7 +285,7 @@ color: #b88e2f;
     color: #9f9f9f;
     font-weight: 500;
 }
-.subribe-btn{
+.subribe-btn {
     padding: 1rem 1.2rem;
     background-color: transparent;
     border-bottom: 1px solid;
@@ -296,90 +294,85 @@ color: #b88e2f;
     font-weight: 600;
     cursor: pointer;
 }
-.subribe-input:focus{
+.subribe-input:focus {
     outline: none;
 }
-.footer-top{
+.footer-top {
     margin-bottom: 2rem;
-    border-bottom: 1px solid #9f9f9f ;
+    border-bottom: 1px solid #9f9f9f;
 }
-.copy-right p{
+.copy-right p {
     margin-block: 3rem;
     font-size: 1.6rem;
     color: #000;
     font-weight: 600;
 }
-.bredcumb{
-    background-image: 
-    linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
-    
-    url(/assets/images/shopbrecumb.jpg);
-  
-   background-position: center;
-   background-repeat: no-repeat;
-   height: 321px;
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   position: relative;
+.bredcumb {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(/ecomerce-minimal-site/assets/images/brebcumb.png);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 321px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
-.bredcumb-content{
+.bredcumb-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.bredcum__nav{
+.bredcum__nav {
     display: flex;
     align-items: center;
-     
+
     margin-top: 1rem;
 }
-.bredcum__nav a{
-  font-size: 1.2rem;
-  color: #000;
+.bredcum__nav a {
+    font-size: 1.2rem;
+    color: #000;
 }
-.bredcum__nav a svg{
+.bredcum__nav a svg {
     height: 18px;
     display: inline-block;
-  ;
 }
-.filter-section{
+.filter-section {
     background-color: #f9f1e7;
     display: flex;
     justify-content: space-between;
     padding-block: 1rem;
 }
-.filter__items{
+.filter__items {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-inline: 5rem;
 }
-.filter-icons{
+.filter-icons {
     display: flex;
     gap: 3rem;
-  
+
     border-right: 1px solid #333333;
     padding: 1rem;
     cursor: pointer;
 }
 .filter-icons li:nth-child(1),
-.filter-icons li:nth-child(2)
-
-{
+.filter-icons li:nth-child(2) {
     display: flex;
     align-items: center;
     gap: 1rem;
     font-size: 1.8rem;
-    
 }
-.filter-section1{
+.filter-section1 {
     display: flex;
     align-items: center;
     gap: 4rem;
 }
-.filter__textbox p{
+.filter__textbox p {
     font-size: 1.6rem;
     font-weight: 400;
     color: #333333;
@@ -387,45 +380,44 @@ color: #b88e2f;
 .filter__textbox {
     display: flex;
 }
-        .filter__item{
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-        .filter__item label{
-            font-size: 1.6rem;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            text-transform: capitalize;
-        }
-.filter__item select{
+.filter__item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.filter__item label {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-transform: capitalize;
+}
+.filter__item select {
     padding: 1rem;
     font-size: 1.6rem;
     font-weight: 400;
     color: #9f9f9f;
     cursor: pointer;
-    
 }
 select {
     -webkit-appearance: none; /* For Chrome, Safari, and Opera */
     -moz-appearance: none; /* For Firefox */
     appearance: none; /* For other browsers */
-   
+
     padding-right: 1.5rem; /* Add some padding to the right to make space for the custom arrow */
 }
-select:focus{
+select:focus {
     outline: none;
 }
 
-.shop-nextbtn{
+.shop-nextbtn {
     display: flex;
     justify-content: center;
     margin-top: 5rem;
     gap: 2rem;
     align-items: center;
 }
-.shop-nextbtn a{
+.shop-nextbtn a {
     padding: 1.4rem 2.8rem;
     border-radius: 0.8rem;
     font-size: 2rem;
@@ -438,40 +430,37 @@ select:focus{
 }
 .shop-nextbtn a:active,
 .shop-nextbtn a:focus,
-.shop-nextbtn a:hover{
+.shop-nextbtn a:hover {
     background-color: #b88e2f;
     color: #fff;
 }
-.shop-footer-top{
+.shop-footer-top {
     background-color: #f4f3ea;
     padding-block: 8rem;
-   
 }
 
-.shop__footer-contents{
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
- 
+.shop__footer-contents {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
     gap: 3rem;
     width: 120rem;
     margin-inline: auto;
 }
-.shop__footer-content{
-  
+.shop__footer-content {
     display: flex;
     align-items: center;
     gap: 2rem;
     width: 100%;
     margin-left: 2rem;
-    
 }
-.shop__footer-content h2{
+.shop__footer-content h2 {
     font-size: 2rem;
     font-weight: 600;
     color: #333333;
     line-height: 1.4;
 }
-.shop__footer-content p{
+.shop__footer-content p {
     font-size: 1.6rem;
     color: #898989;
     font-weight: 400;

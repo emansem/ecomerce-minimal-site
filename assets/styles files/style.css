@@ -706,7 +706,7 @@ td {
 
 .total {
     color: #b88e2f;
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 .cart-buttons {
@@ -723,4 +723,134 @@ td {
     padding: 1rem 2rem;
     cursor: pointer;
     border-radius: 2rem;
+}
+
+.checkout {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    justify-content: center;
+
+    margin-inline: auto;
+    width: 80%;
+    gap: 10rem;
+}
+
+.form-group label,
+textarea {
+    display: block;
+    margin-block: 1rem;
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: 400;
+    text-align: left;
+    resize: none;
+}
+.form-group input,
+textarea,
+select {
+    width: 100%;
+    border: 1px solid #9f9f9f;
+    padding: 1.3rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    outline: none;
+}
+
+.fname-lname {
+    display: flex;
+    gap: 2rem;
+}
+.active-method {
+    color: #333;
+}
+
+.method__details li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #9f9f9f;
+    cursor: pointer;
+}
+.method-info p,
+.method__instruction p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #9f9f9f;
+    margin-bottom: 1rem;
+}
+.method__instruction p {
+    color: #333;
+    margin-block: 1rem;
+}
+
+.method__instruction p a {
+    color: #b88e2f;
+}
+
+.contact {
+    margin-inline: auto;
+    width: 80%;
+    gap: 10rem;
+}
+.contact__heading {
+    text-align: center;
+    width: 70%;
+    margin-inline: auto;
+    margin-block: 2rem;
+}
+
+.contact-contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-top: 8rem;
+}
+.contact__heading h2 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.4;
+}
+
+.contact__heading p {
+    font-size: 1.6rem;
+    color: #9f9f9f;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.contact__textbox li {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-bottom: 6rem;
+}
+.contact__textbox h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+.contact__textbox p {
+    font-size: 1.6rem;
+    color: #9f9f9f;
+    line-height: 1.5;
+}
+.submitbtn {
+    padding: 1rem 5rem;
+    color: #f9f1e7;
+    background-color: #b88e2f;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    display: inline-block;
+    transition: all 0.4s;
+}
+.submitbtn:hover {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #9f9f9f;
 }
