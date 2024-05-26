@@ -17,6 +17,9 @@
     height: 80vh;
     position: relative;
 }
+.checkout-overlay {
+    display: none;
+}
 
 /**
  * Styles for the content within the hero section.

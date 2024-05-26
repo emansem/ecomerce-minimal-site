@@ -816,6 +816,15 @@ select:focus {
         align-items: center;
         align-content: center;
     }
+    .prod__long-desc-images {
+        width: 100%;
+        flex-direction: column;
+        padding-inline: 2rem;
+    }
+    .filter__items {
+        width: 100%;
+        display: none;
+    }
 }
 
 /**
@@ -849,6 +858,42 @@ select:focus {
         padding-inline: 1.2rem;
         grid-template-columns: 1fr;
         width: 100%;
+    }
+    .checkout {
+        width: 100% !important;
+        padding-inline: 2rem;
+    }
+    .checkout {
+        width: 80% !important;
+        padding-inline: 2rem;
+        grid-template-columns: 1fr !important;
+    }
+    .total {
+        font-size: 1.6rem !important;
+    }
+    .related-products {
+        grid-template-columns: repeat(2, 1fr) !important;
+        padding-inline: 2rem;
+    }
+
+    .grid-col-2 {
+        grid-template-columns: 1fr !important;
+        padding-inline: 2rem;
+    }
+    .prod__desc-text p {
+        font-size: 2rem !important;
+    }
+    .product-main-image {
+        width: 100% !important;
+        margin-right: 2rem;
+    }
+    .prod__long-desc-img img {
+        width: 100%;
+    }
+
+    .prod__long-desc--text1,
+    .prod__long-desc--text2 {
+        padding-inline: 1rem !important;
     }
 }
 
@@ -889,19 +934,45 @@ select:focus {
     .cta__textbox-content h1 {
         font-size: 4rem;
     }
+    /* Adjust the layout for the filter section on smaller screens */
     .filter-section {
         display: grid;
         grid-template-columns: 1fr;
     }
+    /* Hide filter items on smaller screens */
     .filter__item {
         display: none;
     }
+    /* Adjust the layout for the shop footer top section on smaller screens */
     .shop-footer-top {
         flex-direction: column;
     }
+    /* Adjust the grid layout for the shop footer contents on smaller screens */
     .shop__footer-contents {
         padding-inline: 1.2rem;
         grid-template-columns: 1fr;
+        width: 100%;
+    }
+    /* Adjust the width and padding for the checkout section on smaller screens */
+    .checkout {
+        width: 100% !important;
+        padding-inline: 2rem;
+    }
+    /* Ensure the checkout section uses a single column layout on smaller screens */
+    .checkout {
+        width: 100% !important;
+        padding-inline: 2rem;
+        grid-template-columns: 1fr !important;
+    }
+    .prod__tabs {
+        flex-direction: column;
+        gap: 1rem !important;
+    }
+    .product-gallary {
+        flex-direction: row !important;
+    }
+    .product-images {
+        flex-direction: column-reverse;
         width: 100%;
     }
 }
@@ -988,25 +1059,43 @@ select:focus {
     .nav__icons {
         position: absolute;
         left: 60%;
-    }
-    .filter-section {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-        overflow: hidden;
-        display: none;
-    }
-    .filter__item {
-        display: none;
-        width: 100%;
-    }
-    .shop__footer-contents {
-        grid-template-columns: 1fr;
-        width: 100%;
-        padding-inline: 1.2rem;
-    }
-    .filter__items {
-        width: 100%;
+        /* Adjust the layout for the filter section on smaller screens */
+        .filter-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+            overflow: hidden;
+            display: none;
+        }
+        /* Hide filter items on smaller screens */
+        .filter__item {
+            display: none;
+            width: 100%;
+        }
+        /* Adjust the grid layout for the shop footer contents on smaller screens */
+        .shop__footer-contents {
+            grid-template-columns: 1fr;
+            width: 100%;
+            padding-inline: 1.2rem;
+        }
+        /* Adjust the width for filter items on smaller screens */
+        .filter__items {
+            width: 100%;
+        }
+        /* Adjust the width and padding for the checkout section on smaller screens */
+        .checkout {
+            width: 100% !important;
+            padding-inline: 2rem;
+            grid-template-columns: 1fr !important;
+        }
+
+        .related-products {
+            grid-template-columns: 1fr !important;
+            padding-inline: 2rem;
+        }
+        .product-images {
+            flex-direction: column;
+        }
     }
 }
 
@@ -1077,14 +1166,33 @@ select:focus {
         flex-direction: column !important;
         align-items: flex-start;
     }
+    /* Hide filter items on smaller screens */
     .filter__item {
         display: none;
     }
+    /* Adjust the grid layout for the shop footer contents on smaller screens */
     .shop__footer-contents {
         grid-template-columns: 1fr;
         width: 100%;
     }
+    /* Hide the filter text box on smaller screens */
     .filter__textbox {
         display: none;
+    }
+    /* Adjust the width and padding for the checkout section on smaller screens */
+    .checkout {
+        width: 100% !important;
+        padding-inline: 2rem;
+        grid-template-columns: 1fr !important;
+    }
+
+    .related-products {
+        grid-template-columns: 1fr !important;
+        padding-inline: 2rem;
+    }
+
+    .product-main-image {
+        width: 100% !important;
+        margin-right: 3rem;
     }
 }
