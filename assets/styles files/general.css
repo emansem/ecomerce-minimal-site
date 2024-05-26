@@ -895,6 +895,25 @@ select:focus {
     .prod__long-desc--text2 {
         padding-inline: 1rem !important;
     }
+    .blog-col-2{
+        grid-template-columns: 1fr  !important;
+    }
+    .blog__sidebar--search{
+        display: none;
+    }
+
+    .features-post{
+        padding-inline: 2rem;
+    }
+    
+    .cart{
+       
+        flex-direction: column;
+    
+    }
+    .cart-items-tabel{
+        width: 100%;
+    }
 }
 
 /**
@@ -975,7 +994,18 @@ select:focus {
         flex-direction: column-reverse;
         width: 100%;
     }
+    .cart-items-tabel{
+        width: 100%;
+        max-width: 100%;
+        overflow-y: scroll;
+    
+    }
+
+
+    
 }
+
+
 
 /**
  * Media queries for 800px
@@ -1196,3 +1226,5 @@ select:focus {
         margin-right: 3rem;
     }
 }
+
+
