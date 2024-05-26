@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact us</title>
+        <title>Checkout page</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -24,7 +24,7 @@
                 <ul class="nav__links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="shop.html">shop</a></li>
-                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="blog.html">about</a></li>
                     <li><a href="contact.html">contact</a></li>
                 </ul>
                 <!-- Navigation icons -->
@@ -90,20 +90,6 @@
                         />
                     </svg>
                 </div>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="icons opennav"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
-                    />
-                </svg>
             </div>
         </div>
 
@@ -111,7 +97,7 @@
 
         <div class="bredcumb">
             <div class="bredcumb-content">
-                <h1 class="primary-heading">Contact Us</h1>
+                <h1 class="primary-heading">Checkout</h1>
                 <div class="bredcum__nav">
                     <a href="#" class="bredcumb__link">Home</a>
                     <a href=""
@@ -130,113 +116,207 @@
                             />
                         </svg>
                     </a>
-                    <a href="contact.html" class="bredcumb__link">contact</a>
+                    <a href="checkout.html" class="bredcumb__link">checkout</a>
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="contact">
-                <div class="contact__heading">
-                    <h2>Get in touch with us</h2>
-                    <p>
-                        For More Information About Our Product & Services.
-                        Please Feel Free To Drop Us An Email. Our Staff Always
-                        Be There To Help You Out. Do Not Hesitate!
-                    </p>
+            <div class="checkout">
+                <div class="checkout__billing--form">
+                    <form
+                        class="checkout-form"
+                        action="/submit-billing"
+                        method="POST"
+                    >
+                        <h1 class="primary-heading">Billing details</h1>
+                        <div class="form-group fname-lname">
+                            <div class="form-group--firstname">
+                                <label for="first-name">First Name</label>
+                                <input
+                                    type="text"
+                                    id="first-name"
+                                    name="first-name"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group-lastname">
+                                <label for="last-name">Last Name</label>
+                                <input
+                                    type="text"
+                                    id="last-name"
+                                    name="last-name"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Company">Company Name (Optional)</label>
+                            <input
+                                type="company"
+                                id="company"
+                                name="company"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select id="country" name="country" required>
+                                <option value="">Select Country</option>
+                                <option value="us">United States</option>
+                                <option value="ca">Canada</option>
+                                <option value="uk">United Kingdom</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State/Province</label>
+                            <select id="state" name="state" required>
+                                <option value="">Select State/Province</option>
+
+                                <option value="al">Alabama</option>
+                                <option value="ca">California</option>
+                                <option value="ny">New York</option>
+
+                                <option value="on">Ontario</option>
+                                <option value="qc">Quebec</option>
+                                <option value="bc">British Columbia</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address"> Street address</label>
+                            <input
+                                type="text"
+                                id="address"
+                                name="address"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City/Town</label>
+                            <input type="text" id="city" name="city" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State</label>
+                            <input
+                                type="text"
+                                id="state"
+                                name="state"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" name="zip" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea name="message" id="message"> </textarea>
+                        </div>
+                    </form>
                 </div>
-                <div class="contact-contents">
-                    <div class="contact__textbox">
-                        <li>
-                            <div class="contact__icon">
-                                <img src="assets/images/location.png" alt="" />
-                            </div>
 
-                            <div class="contact__textbox">
-                                <h2>Address</h2>
-                                <p>
-                                    236 5th SE Avenue, New <br />York NY10000,
-                                    United<br />
-                                    States
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="contact__icon">
-                                <img src="assets/images/phone.png" alt="" />
-                            </div>
-
-                            <div class="contact__textbox">
-                                <h2>Phone</h2>
-                                <p>
-                                    Mobile: +(84) 546-6789<br />
-                                    Hotline: +(84) 456-6789
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="contact__icon">
-                                <img src="assets/images/clock.png" alt="" />
-                            </div>
-
-                            <div class="contact__textbox">
-                                <h2>Working Time</h2>
-                                <p>
-                                    Monday-Friday: 9:00 - 22:00<br />
-                                    Saturday-Sunday: 9:00 - 21:00
-                                </p>
-                            </div>
-                        </li>
+                <div class="checkout__payment">
+                    <div class="cart-total">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Asgard Sofa x 1</td>
+                                    <td>Rs. 250,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Subtotal</td>
+                                    <td class="subtotal">Rs. 250,000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td class="Total">Rs. 250,000.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="contact__form">
-                        <form action="">
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input
-                                    type="name"
-                                    id="name"
-                                    name="name"
-                                    required
-                                />
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    required
-                                />
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input
-                                    type="tel"
-                                    id="phone"
-                                    name="phone"
-                                    required
-                                />
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject </label>
-                                <input
-                                    type="subject"
-                                    id="subject"
-                                    name="subject"
-                                />
-                            </div>
-                            <div class="form-group">
-                                <label for="message"
-                                    >Additional Information</label
+
+                    <div class="checkout__paymen--method">
+                        <div class="method__details">
+                            <li class="active-method">
+                                <span
+                                    ><img src="assets/images/dot1.png" alt=""
+                                /></span>
+                                <span class="active-method"
+                                    >Direct Bank Transfer</span
                                 >
-                                <textarea name="message" id="message">
-                                </textarea>
+                            </li>
+
+                            <div class="method-info">
+                                <p>
+                                    Make your payment directly into our bank
+                                    account. Please use your Order ID as the
+                                    payment reference. Your order will not be
+                                    shipped until the funds have cleared in our
+                                    account.
+                                </p>
+                            </div>
+                            <div class="methods">
+                                <li>
+                                    <span
+                                        ><img
+                                            src="assets/images/dot2.png"
+                                            alt=""
+                                    /></span>
+                                    <span>Direct Bank Transfer</span>
+                                </li>
+                                <li>
+                                    <span
+                                        ><img
+                                            src="assets/images/dot2.png"
+                                            alt=""
+                                    /></span>
+                                    <span> Cash On Delivery</span>
+                                </li>
+                            </div>
+                            <div class="method__instruction">
+                                <p>
+                                    Your personal data will be used to support
+                                    your experience throughout this website, to
+                                    manage access to your account, and for other
+                                    purposes described in our
+                                    <a href="">privacy policy.</a>
+                                </p>
                             </div>
 
-                            <div>
-                                <a class="submitbtn" href="#">Submit</a>
+                            <div class="cart-buttons">
+                                <a
+                                    href="checkout.html"
+                                    class="cart-buttons__link"
+                                    >Place Order</a
+                                >
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -303,7 +383,6 @@
         </div>
         <!-- Footer section starts -->
         <div class="footer-top"></div>
-
         <footer>
             <div class="container">
                 <div class="foooter-content">
@@ -374,7 +453,5 @@
                 </div>
             </div>
         </footer>
-        <!-- Footer section ends -->
-        <!-- Footer section ends -->
     </body>
 </html>
