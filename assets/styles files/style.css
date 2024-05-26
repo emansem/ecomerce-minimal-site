@@ -1,15 +1,13 @@
 /**
- * color
- * 
- * primary: #B88E2F
- * secondary colors: #FFF3E3
- * fontcolor1: 333333
- * font color2 666
- *
- * @format
+ * This CSS file contains styles for various sections of a webpage, including the hero section, categories, call-to-action (CTA) sections, product details, checkout, and contact forms.
+ * The styles are designed to provide a consistent look and feel across the webpage, with a focus on layout, typography, and color schemes.
  */
 
-/*HERO  SECTION   DESIGN*/
+/* HERO SECTION DESIGN */
+
+/**
+ * Styles for the hero section, which includes a background image and content overlay.
+ */
 .hero {
     width: 100%;
     background-image: url(../images/hero-bg.jpeg);
@@ -19,6 +17,10 @@
     height: 80vh;
     position: relative;
 }
+
+/**
+ * Styles for the content within the hero section.
+ */
 .hero__content {
     position: absolute;
     right: 0%;
@@ -29,12 +31,20 @@
     width: 643px;
     transform: translateY(-50%);
 }
+
+/**
+ * Styles for the heading within the hero content.
+ */
 .hero__content h4 {
     font-size: 1.6rem;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
     color: #333333;
 }
+
+/**
+ * Styles for the main heading within the hero content.
+ */
 .hero__content h1 {
     color: #b88e2f;
     font-size: 5.4rem;
@@ -42,6 +52,10 @@
     line-height: 1.2;
     margin-bottom: 0.8rem;
 }
+
+/**
+ * Styles for the paragraph text within the hero content.
+ */
 .hero__content p {
     font-size: 1.8rem;
     font-weight: 400;
@@ -51,6 +65,10 @@
     margin-bottom: 2rem;
     padding-right: 2rem;
 }
+
+/**
+ * Styles for the button within the hero content.
+ */
 .hero__btn {
     padding: 1.2rem 2.8rem;
     background-color: #b88e2f;
@@ -62,36 +80,57 @@
     cursor: pointer;
     transition: all 0.4s;
 }
+
+/**
+ * Hover effect for the button within the hero content.
+ */
 .hero__btn:hover {
     background-color: #fff3e3;
     color: #b88e2f;
     border: 1px solid #b88e2f;
 }
 
-/*H-----------------------------------
+/* CATEGORIES STYLES */
 
-catagories  styles
-=================================*/
+/**
+ * Styles for the categories section.
+ */
 .catagories {
     width: 100%;
 }
+
+/**
+ * Styles for the text within the categories section.
+ */
 .cata__text {
     padding-block: 1rem;
     font-size: 1.6rem;
     color: #666;
     font-weight: 400;
 }
+
+/**
+ * Styles for the grid layout of category items.
+ */
 .cata__items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     overflow: hidden;
 }
+
+/**
+ * Styles for individual category items.
+ */
 .cata__item {
     width: 100%;
     text-align: center;
     overflow: hidden;
 }
+
+/**
+ * Styles for the heading within category items.
+ */
 .cata__item h3 {
     font-size: 1.6rem;
     font-weight: 400;
@@ -100,6 +139,9 @@ catagories  styles
     padding-block: 1rem;
 }
 
+/**
+ * Styles for the images within category items.
+ */
 .cata__item img {
     width: 381px;
     display: block;
@@ -111,37 +153,69 @@ catagories  styles
     border-radius: 2rem;
     transition: all 0.4s;
 }
+
+/**
+ * Hover effect for the images within category items.
+ */
 .cata__item img:hover {
     transform: scale(1.1);
 }
+
+/* CTA SECTION */
+
+/**
+ * Styles for the call-to-action (CTA) section.
+ */
 .cta-section {
     background-color: #fcf8f3;
 }
 
+/**
+ * Styles for the grid layout within the CTA section.
+ */
 .cta__grid-col-4 {
     display: grid;
     grid-template-columns: 1fr 320px 300px 37px;
     padding-block: 4rem;
     gap: 2rem;
 }
+
+/**
+ * Styles for the images within the CTA section.
+ */
 .cta__img2-img img {
     width: 100%;
     object-fit: cover;
 }
+
+/**
+ * Styles for the first image container within the CTA section.
+ */
 .cta__img1 {
     background-image: url(../images/cta1.png);
     display: flex;
     align-items: end;
 }
 
+/**
+ * Styles for the text box within the CTA section.
+ */
 .cta__textbox {
     display: flex;
     align-items: center;
     padding-right: 2rem;
 }
+
+/**
+ * Styles for the content within the text box of the CTA section.
+ */
 .cta__textbox-content h1 {
     line-height: 1.2;
 }
+
+/**
+ * Styles for the paragraph text within the text box of the CTA section.
+ */
 .cta__textbox-content p {
     font-size: 1.6rem;
     font-weight: 300;
@@ -151,6 +225,10 @@ catagories  styles
     margin-block: 2rem;
     padding-right: 2rem;
 }
+
+/**
+ * Styles for the button within the CTA section.
+ */
 .cta__btn {
     padding: 1.2rem 2.8rem;
     background-color: #b88e2f;
@@ -162,11 +240,19 @@ catagories  styles
     cursor: pointer;
     transition: all 0.4s;
 }
+
+/**
+ * Hover effect for the button within the CTA section.
+ */
 .cta__btn:hover {
     background-color: #fff3e3;
     color: #b88e2f;
     border: 1px solid #b88e2f;
 }
+
+/**
+ * Styles for the inner container of the first image within the CTA section.
+ */
 .cta__img1-inner {
     margin-left: 2rem;
     margin-bottom: 2rem;
@@ -174,6 +260,9 @@ catagories  styles
     padding: 2rem;
 }
 
+/**
+ * Styles for the icons within the CTA section.
+ */
 .cta-icons p {
     display: flex;
     align-items: center;
@@ -181,32 +270,47 @@ catagories  styles
     font-size: 1.4rem;
     margin-bottom: 0.8rem;
 }
+
+/**
+ * Styles for the inner text within the CTA section.
+ */
 .cta-ineer-text {
     color: #3a3a3a;
     font-size: 20px;
     font-weight: 400;
 }
+
+/**
+ * Styles for the icon container within the first image of the CTA section.
+ */
 .img1__icon {
     margin-bottom: 2rem;
     background-color: #b88e2f;
     padding: 1rem;
 }
+
+/**
+ * Styles for the icons within the first image of the CTA section.
+ */
 .img1__icon .icons {
     color: #fcf8f3;
     cursor: pointer;
 }
 
+/**
+ * Styles for the second image container within the CTA section.
+ */
 .cta__img2-img {
     position: relative;
 }
-.cta__img2-img {
-    position: relative;
-}
+
+/**
+ * Styles for the slide icon within the second image of the CTA section.
+ */
 .slide-icon {
     position: absolute;
     right: 0%;
     top: 50%;
-
     background-color: #fcf8f3;
     padding: 1rem;
     border-radius: 50%;
@@ -215,28 +319,45 @@ catagories  styles
     display: flex;
     justify-content: center;
 }
+
+/**
+ * Styles for the icons within the slide icon of the CTA section.
+ */
 .slide-icon .icons {
     color: #b88e2f;
 }
+
+/**
+ * Styles for the icons within the second image of the CTA section.
+ */
 .cta__img2--icons {
     display: flex;
     margin-top: 1rem;
     gap: 1rem;
     align-items: center;
 }
+
+/**
+ * Styles for the radio buttons within the CTA section.
+ */
 .slide__radio {
     display: none;
 }
+
+/**
+ * Styles for the radio button circles within the CTA section.
+ */
 .radio__circle {
     border-radius: 50%;
-
     display: block;
     cursor: pointer;
-
     padding: 1rem;
     position: relative;
 }
 
+/**
+ * Styles for the inner circle of the radio buttons within the CTA section.
+ */
 .radio__circle::after {
     content: '';
     width: 11px;
@@ -250,26 +371,46 @@ catagories  styles
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/**
+ * Styles for the checked state of the radio buttons within the CTA section.
+ */
 .slide__radio:checked + .radio__circle {
     border: #b88e2f 1px solid;
-
     padding: 1rem;
 }
+
+/**
+ * Styles for the inner circle of the checked radio buttons within the CTA section.
+ */
 .slide__radio:checked + .radio__circle::after {
     background-color: #b88e2f;
 }
 
+/* PRODUCT DETAILS STYLES */
+
+/**
+ * Styles for the grid layout of product details.
+ */
 .grid-col-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
 }
+
+/**
+ * Styles for the product images container.
+ */
 .product-images {
     display: flex;
     align-items: center;
     margin-right: 3rem;
     gap: 3rem;
 }
+
+/**
+ * Styles for the main product image.
+ */
 .product-main-image img {
     width: 100%;
     height: auto;
@@ -277,6 +418,10 @@ catagories  styles
     display: block;
     transition: all 0.4s;
 }
+
+/**
+ * Styles for the main product image container.
+ */
 .product-main-image {
     width: 481px;
     height: 500px;
@@ -285,6 +430,10 @@ catagories  styles
     display: flex;
     align-items: center;
 }
+
+/**
+ * Styles for the product gallery.
+ */
 .product-gallary {
     display: flex;
     flex-direction: column;
@@ -292,74 +441,128 @@ catagories  styles
     align-items: center;
     justify-content: center;
 }
+
+/**
+ * Styles for individual items within the product gallery.
+ */
 .product-gallary-item {
     background-color: #f9f1e7;
     border-radius: 1.8rem;
     height: 80px;
     width: 76px;
 }
+
+/**
+ * Styles for the images within the product gallery items.
+ */
 .product-gallary-item img {
     width: 100%;
     padding: 1rem;
     transition: all 0.4s;
     cursor: pointer;
 }
+
+/**
+ * Hover effect for the images within the product gallery items and main product image.
+ */
 .product-gallary-item img:hover,
 .product-main-image img:hover {
     transform: scale(1.1);
 }
+
+/**
+ * Styles for the product title.
+ */
 .prod__title {
     margin-bottom: 2rem;
 }
+
+/**
+ * Styles for the heading within the product title.
+ */
 .prod__title h2 {
     font-size: 4rem;
     color: #333333;
     font-weight: 600;
 }
+
+/**
+ * Styles for the span within the product title.
+ */
 .prod__title span {
     font-size: 2rem;
     color: #9f9f9f;
 }
+
+/**
+ * Styles for the product rating.
+ */
 .prod__rating {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-
     gap: 2rem;
 }
+
+/**
+ * Styles for the stars within the product rating.
+ */
 .prod__stars {
     border-right: 1px solid #9f9f9f;
     padding-right: 0.8rem;
 }
+
+/**
+ * Styles for the reviews within the product rating.
+ */
 .prod__reviews span {
     color: #9f9f9f;
     font-size: 1.3rem;
 }
+
+/**
+ * Styles for the product description text.
+ */
 .prod__desc-text p {
     font-size: 1.3rem;
     color: #333333;
     margin-bottom: 2rem;
     line-height: 1.5;
 }
+
+/**
+ * Styles for the product size and color options.
+ */
 .prod__size,
 .prod__color {
     display: flex;
-
     gap: 1rem;
     margin-bottom: 2rem;
     flex-direction: column;
 }
+
+/**
+ * Styles for the span within the product size and color options.
+ */
 .prod__size span,
 .prod__color span {
     color: #9f9f9f;
     font-size: 1.4rem;
 }
+
+/**
+ * Styles for the list of size options.
+ */
 .prod__size ul,
 .color-options {
     display: flex;
     align-items: center;
     gap: 0.8rem;
 }
+
+/**
+ * Styles for individual size options.
+ */
 .prod__size ul li {
     background-color: #f9f1e7;
     padding: 0.8rem 1.2rem;
@@ -369,49 +572,92 @@ catagories  styles
     color: #3a3a3a;
     transition: all 0.4s;
 }
+
+/**
+ * Hover effect for individual size options.
+ */
 .prod__size ul li:hover {
     background-color: #b88e2f;
     color: #fff;
 }
+
+/**
+ * Styles for the color options.
+ */
 .color {
     display: none;
 }
+
+/**
+ * Styles for the color selection circles.
+ */
 .color-select {
     height: 30px;
     width: 30px;
-
     display: block;
     border-radius: 50%;
     transition: all 0.4s;
     cursor: pointer;
 }
 
+/* 
+ * Styles for the first color option in the color selection list.
+ * Sets the background color to a specific shade of purple.
+ */
 .color-options li:nth-child(1) .color-select {
     background-color: #816dfa;
 }
 
+/* 
+ * Styles for the second color option in the color selection list.
+ * Sets the background color to a specific shade of black.
+ */
 .color-options li:nth-child(2) .color-select {
     background-color: #333333;
 }
 
+/* 
+ * Styles for the third color option in the color selection list.
+ * Sets the background color to a specific shade of gold.
+ */
 .color-options li:nth-child(3) .color-select {
     background-color: #b88e2f;
 }
+
+/* 
+ * Styles for the product button container.
+ * Aligns items to the center, sets a gap between items, and adds margin.
+ */
 .prod__btn {
     display: flex;
     align-items: center;
     gap: 2rem;
     margin-block: 1rem;
 }
+
+/* 
+ * Styles for the quantity input field.
+ * Sets the width, text alignment, background color, and outline.
+ */
 .qty__input {
     width: 50px;
     text-align: center;
     background-color: transparent;
     outline: none;
 }
+
+/* 
+ * Styles for the quantity buttons.
+ * Sets the background color to transparent.
+ */
 .qty button {
     background-color: transparent;
 }
+
+/* 
+ * Styles for the quantity container, cart button, and wishlist button.
+ * Sets the background color, border, padding, border-radius, font size, cursor, and display properties.
+ */
 .qty,
 .prod__btn--cart,
 .prod__btn--wishlist {
@@ -423,20 +669,40 @@ catagories  styles
     cursor: pointer;
     display: inline-block;
 }
+
+/* 
+ * Styles for the product button container with buttons.
+ * Aligns items to the center and sets a gap between items.
+ */
 .prod__btn-buttons {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
+
+/* 
+ * Styles for the divider element.
+ * Sets the margin and border properties.
+ */
 .divider {
     margin-block: 4rem;
     border-bottom: 1px solid #9f9f9f;
 }
+
+/* 
+ * Styles for the product share list items.
+ * Aligns items to the center and sets a gap between items.
+ */
 .prod__share li {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
+
+/* 
+ * Styles for the product share container.
+ * Sets the width, display, alignment, gap, font size, and color properties.
+ */
 .product-share {
     width: 100%;
     display: flex;
@@ -445,28 +711,58 @@ catagories  styles
     font-size: 1.4rem;
     color: #9f9f9f;
 }
+
+/* 
+ * Styles for the product ID container.
+ * Sets the display and alignment properties.
+ */
 .prod-id {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+/* 
+ * Styles for the product ID paragraph.
+ * Sets the padding at the bottom.
+ */
 .prod-id p {
     padding-bottom: 1rem;
 }
+
+/* 
+ * Styles for the product right container.
+ * Sets the display and alignment properties.
+ */
 .prod-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+/* 
+ * Styles for the product right paragraph.
+ * Sets the padding at the bottom.
+ */
 .prod-right p {
     padding-bottom: 0.6rem;
 }
+
+/* 
+ * Styles for the share social container.
+ * Aligns items to the center, sets a gap between items, and adds a cursor pointer.
+ */
 .share-socia {
     display: flex;
     align-items: center;
     gap: 1rem;
     cursor: pointer;
 }
+
+/* 
+ * Styles for the product tabs container.
+ * Aligns items to the center, sets font size, color, cursor, gap, margin, transition, and font weight properties.
+ */
 .prod__tabs {
     display: flex;
     justify-content: center;
@@ -479,13 +775,28 @@ catagories  styles
     transition: all 0.4s;
     font-weight: 400;
 }
+
+/* 
+ * Styles for the active product tab item.
+ * Sets the color to a specific shade of black.
+ */
 .prod__tab-item:active,
 .prod__tab-item .active {
     color: #333333;
 }
+
+/* 
+ * Styles for the active product tab item.
+ * Sets the color to a specific shade of black.
+ */
 .prod__tab-item.active {
     color: #333333;
 }
+
+/* 
+ * Styles for the long description text.
+ * Sets the margin, font size, line height, padding, font weight, and color properties.
+ */
 .prod__long-desc--text1,
 .prod__long-desc--text2 {
     margin-block: 2rem;
@@ -495,10 +806,20 @@ catagories  styles
     font-weight: 400;
     color: #9f9f9f;
 }
+
+/* 
+ * Styles for the long description images container.
+ * Sets the display and gap properties.
+ */
 .prod__long-desc-images {
     display: flex;
     gap: 3rem;
 }
+
+/* 
+ * Styles for the long description image container.
+ * Sets the background color, padding, display, alignment, and justification properties.
+ */
 .prod__long-desc-img {
     background-color: #f9f1e7;
     padding: 1rem;
@@ -506,24 +827,54 @@ catagories  styles
     align-items: center;
     justify-content: center;
 }
+
+/* 
+ * Styles for the long description image.
+ * Sets the width to 100%.
+ */
 .prod__long-desc-im img {
     width: 100%;
 }
+
+/* 
+ * Styles for the divider element.
+ * Sets the width to 100%.
+ */
 .divider {
     width: 100%;
 }
+
+/* 
+ * Styles for the related product heading.
+ * Sets the text alignment and margin properties.
+ */
 .relatad-prod-heading {
     text-align: center;
     margin-block: 2rem;
 }
+
+/* 
+ * Styles for the related products container.
+ * Sets the display, grid template columns, and gap properties.
+ */
 .related-products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
 }
+
+/* 
+ * Styles for the related button.
+ * Sets the margin at the bottom.
+ */
 .related-btn {
     margin-bottom: 20rem;
 }
+
+/* 
+ * Styles for the checkout overlay.
+ * Sets the position, top, left, width, height, background color, and z-index properties.
+ */
 .checkout-overlay {
     position: fixed;
     top: 0;
@@ -533,6 +884,11 @@ catagories  styles
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
+
+/* 
+ * Styles for the checkout overlay contents.
+ * Sets the position, right, padding, background color, margin, and width properties.
+ */
 .checkou-overlay-contents {
     position: absolute;
     right: 0;
@@ -541,6 +897,11 @@ catagories  styles
     margin-inline: auto;
     width: 41.7rem;
 }
+
+/* 
+ * Styles for the checkout overlay header.
+ * Aligns items to the center, sets the display, alignment, margin, border, padding, and cursor properties.
+ */
 .checkout__overlay-header {
     display: flex;
     align-items: center;
@@ -550,11 +911,21 @@ catagories  styles
     padding-bottom: 1rem;
     cursor: pointer;
 }
+
+/* 
+ * Styles for the checkout overlay header title.
+ * Sets the font size, font weight, and color properties.
+ */
 .checkout__overlay-header h2 {
     font-size: 2.4rem;
     font-weight: 600;
     color: #333333;
 }
+
+/* 
+ * Styles for the checkout items container.
+ * Sets the display, gap, alignment, margin, and position properties.
+ */
 .checkout__items {
     display: flex;
     gap: 2rem;
@@ -562,16 +933,24 @@ catagories  styles
     margin-top: 3rem;
     position: relative;
 }
+
+/* 
+ * Styles for the product info title and subtotal title.
+ * Sets the color and font weight properties.
+ */
 .product__info h2,
 .sub-total h2 {
     color: #666;
     font-weight: 400;
 }
 
+/* 
+ * Styles for the checkout items after pseudo-element.
+ * Sets the content, display, background color, position, alignment, padding, border radius, font size, color, and cursor properties.
+ */
 .checkout__items::after {
     content: 'x';
     display: block;
-
     background-color: #fff;
     position: absolute;
     right: 0;
@@ -585,15 +964,29 @@ catagories  styles
     cursor: pointer;
 }
 
+/* 
+ * Styles for the product info container.
+ * Sets the padding, font size, font weight, and position properties.
+ */
 .product__info {
     padding-top: 1rem;
     font-size: 1.6rem;
     font-weight: 400;
     position: relative;
 }
+
+/* 
+ * Styles for the third child span in the product info container.
+ * Sets the color to a specific shade of gold.
+ */
 .product__info span:nth-child(3) {
     color: #b88e2f;
 }
+
+/* 
+ * Styles for the subtotal container.
+ * Sets the margin, display, alignment, gap, padding, font size, and border properties.
+ */
 .sub-total {
     margin-top: 10rem;
     display: flex;
@@ -603,16 +996,31 @@ catagories  styles
     font-size: 1.6rem;
     border-bottom: 1px solid #9f9f9f;
 }
+
+/* 
+ * Styles for the span elements in the subtotal container.
+ * Sets the color and font weight properties.
+ */
 .sub-total span {
     color: #b88e2f;
     font-weight: 400;
 }
+
+/* 
+ * Styles for the checkout buttons container.
+ * Sets the display, alignment, and margin properties.
+ */
 .checkout-btns {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-block: 2rem;
 }
+
+/* 
+ * Styles for the checkout buttons.
+ * Sets the color, font size, font weight, border, padding, cursor, and border radius properties.
+ */
 .checkout-btns a {
     color: #333333;
     font-size: 1.2rem;
@@ -623,15 +1031,21 @@ catagories  styles
     border-radius: 2rem;
 }
 
-/* carts styling*/
-
+/* 
+ * Styles for the cart container.
+ * Aligns items to the center, sets the display, alignment, and gap properties.
+ */
 .cart {
     display: flex;
     align-items: center;
-
     justify-content: center;
     gap: 5rem;
 }
+
+/* 
+ * Styles for the cart input field.
+ * Sets the width, height, border, padding, text alignment, and cursor properties.
+ */
 .cart-input {
     width: 3rem;
     height: 3rem;
@@ -641,13 +1055,27 @@ catagories  styles
     cursor: pointer;
 }
 
+/* 
+ * Styles for the table element.
+ * Sets the width and border collapse properties.
+ */
 table {
     width: 100%;
     border-collapse: collapse;
 }
+
+/* 
+ * Styles for the cart table cells.
+ * Sets the padding property.
+ */
 .cart-table tr td {
     padding: 3rem;
 }
+
+/* 
+ * Styles for the table header and data cells.
+ * Sets the padding, text transformation, text alignment, and font size properties.
+ */
 th,
 td {
     padding: 1rem;
@@ -655,32 +1083,64 @@ td {
     text-align: left;
     font-size: 1.4rem 1.8rem;
 }
+
+/* 
+ * Styles for the table header cells in the table head.
+ * Sets the background color and padding properties.
+ */
 thead th {
     background-color: #f9f1e7;
     padding: 1.4rem;
 }
 
+/* 
+ * Styles for the table body.
+ * Sets the padding and cursor properties.
+ */
 .tbody {
     padding-top: 4rem;
     cursor: pointer;
 }
+
+/* 
+ * Styles for the table header cells.
+ * Sets the font weight and color properties.
+ */
 th {
     font-weight: 500;
     color: #333;
 }
+
+/* 
+ * Styles for the table data cells.
+ * Sets the font weight and color properties.
+ */
 td {
     font-weight: 400;
     color: #9f9f9f;
 }
 
+/* 
+ * Styles for the cart subtotal.
+ * Sets the color property.
+ */
 .cart-subtotal {
     color: #333;
 }
+
+/* 
+ * Styles for the cart total container.
+ * Sets the background color and padding properties.
+ */
 .cart-total {
     background-color: #f9f1e7;
     padding: 3rem;
 }
 
+/* 
+ * Styles for the cart total title.
+ * Sets the font size, font weight, color, margin, and text alignment properties.
+ */
 .cart-total h2 {
     font-size: 3.2rem;
     font-weight: 600;
@@ -689,6 +1149,10 @@ td {
     text-align: center;
 }
 
+/* 
+ * Styles for the cart text items list.
+ * Aligns items to the center, sets the display, alignment, gap, padding, font weight, font size, and color properties.
+ */
 .cart-text-items li {
     display: flex;
     align-items: center;
@@ -696,25 +1160,41 @@ td {
     gap: 2rem;
     padding-block: 2rem;
     font-weight: 400;
-
     font-size: 1.6rem;
     color: #3a3a3a;
 }
+
+/* 
+ * Styles for the subtotal text.
+ * Sets the color property.
+ */
 .subtotal {
     color: #9f9f9f;
 }
 
+/* 
+ * Styles for the total text.
+ * Sets the color and font size properties.
+ */
 .total {
     color: #b88e2f;
     font-size: 2.4rem;
 }
 
+/* 
+ * Styles for the cart buttons container.
+ * Sets the display, alignment, and margin properties.
+ */
 .cart-buttons {
     display: flex;
     justify-content: center;
-
     margin-block: 1rem;
 }
+
+/* 
+ * Styles for the cart buttons.
+ * Sets the color, font size, font weight, border, padding, cursor, and border radius properties.
+ */
 .cart-buttons a {
     color: #333;
     font-size: 1.6rem;
@@ -725,16 +1205,24 @@ td {
     border-radius: 2rem;
 }
 
+/**
+ * Styles for the checkout container.
+ * Sets the display to grid, defines the grid template columns, centers the content,
+ * and sets the margin, width, and gap properties.
+ */
 .checkout {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     justify-content: center;
-
     margin-inline: auto;
     width: 80%;
     gap: 10rem;
 }
 
+/**
+ * Styles for form group labels and textareas.
+ * Sets the display, margin, font size, color, font weight, text alignment, and resize properties.
+ */
 .form-group label,
 textarea {
     display: block;
@@ -745,6 +1233,11 @@ textarea {
     text-align: left;
     resize: none;
 }
+
+/**
+ * Styles for form group inputs, textareas, and select elements.
+ * Sets the width, border, padding, font size, border radius, and outline properties.
+ */
 .form-group input,
 textarea,
 select {
@@ -756,14 +1249,27 @@ select {
     outline: none;
 }
 
+/**
+ * Styles for the first name and last name container.
+ * Sets the display and gap properties.
+ */
 .fname-lname {
     display: flex;
     gap: 2rem;
 }
+
+/**
+ * Styles for the active method.
+ * Sets the color property.
+ */
 .active-method {
     color: #333;
 }
 
+/**
+ * Styles for the method details list items.
+ * Sets the display, alignment, gap, padding, font size, font weight, color, and cursor properties.
+ */
 .method__details li {
     display: flex;
     align-items: center;
@@ -774,6 +1280,11 @@ select {
     color: #9f9f9f;
     cursor: pointer;
 }
+
+/**
+ * Styles for the method info and instruction paragraphs.
+ * Sets the font size, line height, font weight, color, and margin properties.
+ */
 .method-info p,
 .method__instruction p {
     font-size: 1.6rem;
@@ -782,20 +1293,38 @@ select {
     color: #9f9f9f;
     margin-bottom: 1rem;
 }
+
+/**
+ * Additional styles for the method instruction paragraphs.
+ * Sets the color and margin properties.
+ */
 .method__instruction p {
     color: #333;
     margin-block: 1rem;
 }
 
+/**
+ * Styles for links within the method instruction paragraphs.
+ * Sets the color property.
+ */
 .method__instruction p a {
     color: #b88e2f;
 }
 
+/**
+ * Styles for the contact container.
+ * Sets the margin, width, and gap properties.
+ */
 .contact {
     margin-inline: auto;
     width: 80%;
     gap: 10rem;
 }
+
+/**
+ * Styles for the contact heading.
+ * Sets the text alignment, width, margin, and block properties.
+ */
 .contact__heading {
     text-align: center;
     width: 70%;
@@ -803,12 +1332,21 @@ select {
     margin-block: 2rem;
 }
 
+/**
+ * Styles for the contact contents container.
+ * Sets the display, grid template columns, and alignment properties.
+ */
 .contact-contents {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     margin-top: 8rem;
 }
+
+/**
+ * Styles for the contact heading title.
+ * Sets the font size, font weight, color, and line height properties.
+ */
 .contact__heading h2 {
     font-size: 3.6rem;
     font-weight: 600;
@@ -816,29 +1354,53 @@ select {
     line-height: 1.4;
 }
 
+/**
+ * Styles for the contact heading paragraph.
+ * Sets the font size, color, font weight, and line height properties.
+ */
 .contact__heading p {
     font-size: 1.6rem;
     color: #9f9f9f;
     font-weight: 400;
     line-height: 1.4;
 }
+
+/**
+ * Styles for the contact textbox list items.
+ * Sets the display, gap, alignment, and padding properties.
+ */
 .contact__textbox li {
     display: flex;
     gap: 2rem;
     align-items: center;
     padding-bottom: 6rem;
 }
+
+/**
+ * Styles for the contact textbox title.
+ * Sets the font size, font weight, margin, and color properties.
+ */
 .contact__textbox h2 {
     font-size: 2.4rem;
     font-weight: 600;
     margin-bottom: 1rem;
     color: #333;
 }
+
+/**
+ * Styles for the contact textbox paragraph.
+ * Sets the font size, color, and line height properties.
+ */
 .contact__textbox p {
     font-size: 1.6rem;
     color: #9f9f9f;
     line-height: 1.5;
 }
+
+/**
+ * Styles for the submit button.
+ * Sets the padding, color, background color, font size, border radius, margin, display, and transition properties.
+ */
 .submitbtn {
     padding: 1rem 5rem;
     color: #f9f1e7;
@@ -849,8 +1411,148 @@ select {
     display: inline-block;
     transition: all 0.4s;
 }
+
+/**
+ * Hover effect for the submit button.
+ * Sets the background color, color, and border properties.
+ */
 .submitbtn:hover {
     background-color: transparent;
     color: #333;
     border: 1px solid #9f9f9f;
+}
+
+.blog__sidebar-img img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.blog-col-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 7rem;
+}
+.blog__sidebar {
+    padding: 1rem;
+    margin-inline: 2rem;
+}
+
+.feature__blog-img img {
+    width: 100%;
+    height: auto;
+    margin-top: 6rem;
+}
+
+.blog-search {
+    width: 31.1rem;
+    height: 5.8rem;
+    border: 1px solid #9f9f9f;
+    border-radius: 1rem;
+    padding-inline: 1rem;
+    margin-block: 2rem;
+    outline: none;
+}
+.blog__sidebar--search {
+    position: relative;
+}
+.blog__search--icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.blog__sidebar-title h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-block: 2rem;
+    color: #333;
+}
+.blog__sidebar-list li a {
+    color: #9f9f9f;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.blog__sidebar-list li a:hover {
+    color: #b88e2f;
+}
+.blog__sidebar-list li {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    color: #9f9f9f;
+    font-size: 1.6rem;
+    font-weight: 500;
+    align-items: center;
+}
+.blog__sidebar-list-recent li {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+.blog__sidebar-text h3 a {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.4;
+    padding-bottom: 0.8rem;
+}
+.blog__sidebar-text span {
+    font-size: 1.2rem;
+    color: #9f9f9f;
+    padding-top: 1rem;
+}
+
+.blog__admin {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.6rem;
+    margin-top: 1rem;
+}
+.blog__admin li {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    text-align: left;
+    font-size: 1.6rem;
+    color: #9f9f9f;
+}
+.blog__admin li img {
+    display: block;
+}
+
+.feature__blog-text h2 {
+    font-size: 2.6rem;
+    margin-block: 1rem;
+    line-height: 1.4;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.feature__blog-text p {
+    font-size: 1.5rem;
+    color: #9f9f9f;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+
+    font-weight: 400;
+}
+.feature__blog-text a {
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.4rem;
+    transition: all 0.4s;
+}
+
+.feature__blog-text a:hover {
+    color: #b88e2f;
+    border-bottom: 1px solid #b88e2f;
 }
