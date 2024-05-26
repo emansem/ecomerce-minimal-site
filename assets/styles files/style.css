@@ -113,10 +113,12 @@
  * Styles for the grid layout of category items.
  */
 .cata__items {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
+    width: 100%;
+    align-items: center;
+    gap: 3rem;
 }
 
 /**
@@ -124,8 +126,6 @@
  */
 .cata__item {
     width: 100%;
-    text-align: center;
-    overflow: hidden;
 }
 
 /**
@@ -137,21 +137,24 @@
     font-family: 'Poppins', sans-serif;
     color: #333333;
     padding-block: 1rem;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 /**
  * Styles for the images within category items.
  */
 .cata__item img {
-    width: 381px;
+    width: 100%;
     display: block;
-    height: auto;
-    height: 480px;
+    height: 40rem;
     object-fit: cover;
+
     cursor: pointer;
-    object-fit: cover;
+
     border-radius: 2rem;
     transition: all 0.4s;
+    overflow: hidden;
 }
 
 /**
@@ -175,7 +178,7 @@
  */
 .cta__grid-col-4 {
     display: grid;
-    grid-template-columns: 1fr 320px 300px 37px;
+    grid-template-columns: 1fr 32rem 30rem 3.7rem;
     padding-block: 4rem;
     gap: 2rem;
 }
@@ -187,7 +190,11 @@
     width: 100%;
     object-fit: cover;
 }
-
+.cta-images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /**
  * Styles for the first image container within the CTA section.
  */
@@ -195,6 +202,7 @@
     background-image: url(../images/cta1.png);
     display: flex;
     align-items: end;
+    width: 100%;
 }
 
 /**
@@ -457,7 +465,7 @@
  */
 .product-gallary-item img {
     width: 100%;
-    padding: 1rem;
+
     transition: all 0.4s;
     cursor: pointer;
 }
@@ -1416,12 +1424,14 @@ select {
  * Hover effect for the submit button.
  * Sets the background color, color, and border properties.
  */
+./* Styles for the submit button */
 .submitbtn:hover {
     background-color: transparent;
     color: #333;
     border: 1px solid #9f9f9f;
 }
 
+/* Styles for the blog sidebar image */
 .blog__sidebar-img img {
     width: 8rem;
     height: 8rem;
@@ -1429,22 +1439,27 @@ select {
     object-fit: cover;
 }
 
+/* Styles for the two-column blog layout */
 .blog-col-2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 7rem;
 }
+
+/* Styles for the blog sidebar */
 .blog__sidebar {
     padding: 1rem;
     margin-inline: 2rem;
 }
 
+/* Styles for the feature blog image */
 .feature__blog-img img {
     width: 100%;
     height: auto;
     margin-top: 6rem;
 }
 
+/* Styles for the blog search bar */
 .blog-search {
     width: 31.1rem;
     height: 5.8rem;
@@ -1454,9 +1469,13 @@ select {
     margin-block: 2rem;
     outline: none;
 }
+
+/* Styles for the blog sidebar search */
 .blog__sidebar--search {
     position: relative;
 }
+
+/* Styles for the blog search icon */
 .blog__search--icon {
     position: absolute;
     top: 50%;
@@ -1464,20 +1483,28 @@ select {
     transform: translateY(-50%);
     cursor: pointer;
 }
+
+/* Styles for the blog sidebar title */
 .blog__sidebar-title h2 {
     font-size: 2.4rem;
     font-weight: 600;
     margin-block: 2rem;
     color: #333;
 }
+
+/* Styles for the blog sidebar list links */
 .blog__sidebar-list li a {
     color: #9f9f9f;
     cursor: pointer;
     transition: all 0.4s;
 }
+
+/* Styles for the blog sidebar list links on hover */
 .blog__sidebar-list li a:hover {
     color: #b88e2f;
 }
+
+/* Styles for the blog sidebar list items */
 .blog__sidebar-list li {
     display: flex;
     justify-content: space-between;
@@ -1487,12 +1514,16 @@ select {
     font-weight: 500;
     align-items: center;
 }
+
+/* Styles for the recent blog sidebar list items */
 .blog__sidebar-list-recent li {
     display: flex;
     align-items: center;
     gap: 2rem;
     padding-bottom: 2rem;
 }
+
+/* Styles for the blog sidebar text */
 .blog__sidebar-text h3 a {
     font-size: 1.4rem;
     color: #333;
@@ -1502,12 +1533,15 @@ select {
     line-height: 1.4;
     padding-bottom: 0.8rem;
 }
+
+/* Styles for the blog sidebar text span */
 .blog__sidebar-text span {
     font-size: 1.2rem;
     color: #9f9f9f;
     padding-top: 1rem;
 }
 
+/* Styles for the blog admin section */
 .blog__admin {
     display: flex;
     align-items: center;
@@ -1515,6 +1549,8 @@ select {
     margin-bottom: 1.6rem;
     margin-top: 1rem;
 }
+
+/* Styles for the blog admin list items */
 .blog__admin li {
     display: flex;
     gap: 0.8rem;
@@ -1523,10 +1559,13 @@ select {
     font-size: 1.6rem;
     color: #9f9f9f;
 }
+
+/* Styles for the blog admin list images */
 .blog__admin li img {
     display: block;
 }
 
+/* Styles for the feature blog text heading */
 .feature__blog-text h2 {
     font-size: 2.6rem;
     margin-block: 1rem;
@@ -1534,14 +1573,17 @@ select {
     font-weight: 700;
     text-transform: capitalize;
 }
+
+/* Styles for the feature blog text paragraph */
 .feature__blog-text p {
     font-size: 1.5rem;
     color: #9f9f9f;
     margin-bottom: 2rem;
     line-height: 1.5;
-
     font-weight: 400;
 }
+
+/* Styles for the feature blog text link */
 .feature__blog-text a {
     color: #333;
     font-size: 1.6rem;
@@ -1552,6 +1594,7 @@ select {
     transition: all 0.4s;
 }
 
+/* Styles for the feature blog text link on hover */
 .feature__blog-text a:hover {
     color: #b88e2f;
     border-bottom: 1px solid #b88e2f;

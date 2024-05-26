@@ -13,6 +13,12 @@
         <link rel="stylesheet" href="assets/styles files/style.css" />
     </head>
     <body>
+        <!-- 
+            This HTML file represents the main page of an e-commerce minimal site.
+            It contains the header section with a navigation bar and icons, the hero section with a call-to-action button, 
+            the categories section with images and headings, and the products section with product items and overlay content.
+            The file structure is organized using div containers and semantic HTML tags.
+        -->
         <div class="header">
             <!-- Navbar container -->
             <div class="navbar">
@@ -90,6 +96,20 @@
                         />
                     </svg>
                 </div>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icons opennav"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                    />
+                </svg>
             </div>
         </div>
 
@@ -885,6 +905,7 @@
                         </div>
                         <div class="cta__img3">
                             <img
+                                class="cta-images"
                                 src="./assets/images/cta3.png"
                                 alt=""
                                 srcset=""
@@ -973,15 +994,19 @@
                             </div>
 
                             <form action="" method="post" class="subribe-form">
-                                <input
-                                    type="email"
-                                    name="email"
-                                    placeholder="Enter your email"
-                                    class="subribe-input"
-                                />
-                                <button type="submit" class="subribe-btn">
-                                    Subscribe
-                                </button>
+                                <div>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        placeholder="Enter your email"
+                                        class="subribe-input"
+                                    />
+                                </div>
+                                <div>
+                                    <button type="submit" class="subribe-btn">
+                                        Subscribe
+                                    </button>
+                                </div>
                             </form>
                         </div>
                     </div>
