@@ -41,8 +41,11 @@ html {
     background-color: #fff;
     margin-inline: auto;
     padding: 1.2rem 1.4rem;
-    height: 100px;
+   left: 0%;
+   right: 0%;
     width: 100%;
+    position: fixed;
+    z-index: 100;
 }
 
 /**
@@ -505,7 +508,7 @@ html {
  */
 .bredcumb {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url(/ecomerce-minimal-site/assets/images/brebcumb.png);
+        url(/assets/images/brebcumb.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1058,6 +1061,25 @@ select:focus {
         text-align: left;
         margin-left: -14;
         display: none;
+        transition: all 0.4s;
+        animation: slideinleft 0.4s;
+    }
+
+    @keyframes slideinleft {
+        
+        from {
+            transform: translateX(-100%);
+        }
+    }
+
+    #nav__checkbox {
+        display: none;
+    }
+
+    #nav__checkbox:checked ~ .nav__links {
+        display: block;
+        
+       
     }
     /* Adjust the margin for the first navigation link */
     .nav__links li:nth-child(1) {
