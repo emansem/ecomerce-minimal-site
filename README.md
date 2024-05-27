@@ -2,16 +2,15 @@
 
 This is a minimalistic e-commerce site project designed to provide a simple and efficient online shopping experience.
 
-![E-commerce Site Screenshot](screenshot.png)
-
+![E-commerce Site Screenshot](https://i.ibb.co/Tvf7fzZ/e-commerce-site-screenshot.png)
 
 ## Features
 
-- **Responsive Design:** Ensures optimal viewing on various devices.
-- **Product Pages:** Includes product listings, individual product details, and a shopping cart.
-- **Checkout Process:** Streamlined checkout with order summary and payment options.
-- **Contact Form:** Allows customers to get in touch easily.
-- **Blog Section:** Features articles related to products and shopping tips.
+-   **Responsive Design:** Ensures optimal viewing on various devices.
+-   **Product Pages:** Includes product listings, individual product details, and a shopping cart.
+-   **Checkout Process:** Streamlined checkout with order summary and payment options.
+-   **Contact Form:** Allows customers to get in touch easily.
+-   **Blog Section:** Features articles related to products and shopping tips.
 
 ## Special Thanks
 

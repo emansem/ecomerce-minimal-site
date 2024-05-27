@@ -41,8 +41,8 @@ html {
     background-color: #fff;
     margin-inline: auto;
     padding: 1.2rem 1.4rem;
-   left: 0%;
-   right: 0%;
+    left: 0%;
+    right: 0%;
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -1066,7 +1066,6 @@ select:focus {
     }
 
     @keyframes slideinleft {
-        
         from {
             transform: translateX(-100%);
         }
@@ -1078,8 +1077,6 @@ select:focus {
 
     #nav__checkbox:checked ~ .nav__links {
         display: block;
-        
-       
     }
     /* Adjust the margin for the first navigation link */
     .nav__links li:nth-child(1) {
