@@ -1,0 +1,1239 @@
+/**
+ * General styles for the entire document.
+ * Sets the default font family, padding, margin, box-sizing, list style, border, and text decoration.
+ */
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+}
+.opennav {
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+/**
+ * Styles for icon elements.
+ * Sets the width and height properties.
+ */
+.icons {
+    width: 24px;
+    height: 24px;
+}
+
+/**
+ * Sets the base font size for the HTML document.
+ */
+html {
+    font-size: 64%;
+}
+
+/**
+ * Styles for the header section.
+ * Sets the background color, margin, padding, height, and width properties.
+ */
+.header {
+    background-color: #fff;
+    margin-inline: auto;
+    padding: 1.2rem 1.4rem;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/**
+ * Styles for the navigation bar.
+ * Sets the display, alignment, and padding properties.
+ */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.4rem;
+    position: relativ;
+}
+
+/**
+ * Styles for the header logo.
+ * Sets the width, display, height, object-fit, and cursor properties.
+ */
+.header__logo img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/**
+ * Styles for the navigation links.
+ * Sets the display, alignment, gap, padding, cursor, text transformation, color, font size, transition, font weight, and font family properties.
+ */
+.nav__links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav__links li a {
+    display: inline-block;
+    padding-inline: 1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: #333333;
+    font-size: 1.6rem;
+    transition: all 0.4s;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+/**
+ * Adds an underline effect to navigation links on hover.
+ */
+.nav__links li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #b88e2f;
+    transition: width 0.4s;
+}
+
+.nav__links li a:hover::after {
+    width: 100%;
+}
+
+/**
+ * Styles for the navigation icons.
+ * Sets the display, alignment, gap, width, height, stroke, transition, and cursor properties.
+ */
+.nav__icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav__icons .icons {
+    width: 24px;
+    height: 24px;
+    stroke: #333333;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+/**
+ * Styles for the container element.
+ * Sets the width, max-width, margin, and padding properties.
+ */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1.4rem;
+}
+
+/**
+ * Styles for the categories heading.
+ * Sets the margin and text alignment properties.
+ */
+.catagories__heading {
+    margin-block: 2rem;
+    text-align: center;
+}
+
+/**
+ * Styles for primary headings.
+ * Sets the font size, font weight, font family, and color properties.
+ */
+.primary-heading {
+    font-size: 3.3rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+}
+
+/**
+ * Styles for product images.
+ * Sets the position property.
+ */
+.product__img {
+    position: relative;
+}
+
+/**
+ * Styles for product image labels.
+ * Sets the position, padding, font size, color, text alignment, background color, and border radius properties.
+ */
+.product__img span {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    top: 10;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    color: #f4f5f7;
+    text-align: center;
+    background-color: #e97171;
+    border-radius: 50%;
+}
+
+/**
+ * Styles for product images.
+ * Sets the width, height, and object-fit properties.
+ */
+.product__img img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+/**
+ * Styles for the products grid.
+ * Sets the display, grid template columns, grid template rows, and gap properties.
+ */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+/**
+ * Styles for individual product items.
+ * Sets the background color, position, and cursor properties.
+ */
+.product-item {
+    background-color: #f4f5f7;
+    position: relative;
+    cursor: pointer;
+}
+
+/**
+ * Styles for the product overlay content.
+ * Sets the position, width, height, alignment, background color, transition, opacity, and cursor properties.
+ */
+.product__overlay-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(58, 58, 58, 0.5);
+    transition: all 0.4s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.product-item:hover .product__overlay-content {
+    opacity: 1;
+}
+
+/**
+ * Styles for product overlay links.
+ * Sets the background color, padding, font size, color, and margin properties.
+ */
+.product__overlay-content a {
+    background-color: #f4f5f7;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.6rem;
+    color: #b88e2f;
+    margin-bottom: 1rem;
+}
+
+/**
+ * Styles for product overlay icons.
+ * Sets the display, alignment, gap, font size, and margin properties.
+ */
+.prod__overlay--icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+/**
+ * Styles for product overlay icons (SVG).
+ * Sets the width, height, stroke, cursor, and transition properties.
+ */
+.prod__overlay--icons svg {
+    width: 20px;
+    height: 20px;
+    stroke: #f4f5f7;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+/**
+ * Styles for product overlay icon text.
+ * Sets the display, alignment, and color properties.
+ */
+.prod__overlay--icons p {
+    display: flex;
+    align-items: center;
+    color: #f4f5f7;
+}
+
+/**
+ * Styles for the product text box.
+ * Sets the padding property.
+ */
+.prod__textbox {
+    padding: 1.8rem;
+}
+
+/**
+ * Styles for product text box headings.
+ * Sets the font size, font weight, font family, and color properties.
+ */
+.prod__textbox h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #3a3a3a;
+}
+
+/**
+ * Styles for product text box paragraphs.
+ * Sets the font size, font weight, font family, color, and padding properties.
+ */
+.prod__textbox p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color: #898989;
+    padding-bottom: 0.8rem;
+}
+
+/**
+ * Styles for the product price section.
+ * Sets the display, alignment, and gap properties.
+ */
+.prod__price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/**
+ * Styles for product price text.
+ * Sets the font size, font weight, font family, and color properties.
+ */
+.prod__price span {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #3a3a3a;
+}
+
+/**
+ * Styles for old product prices.
+ * Sets the font size and color properties.
+ */
+.prod__price .old-price {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+}
+
+/**
+ * Styles for the show more button container.
+ * Sets the display, alignment, margin, and width properties.
+ */
+.show__btn {
+    display: flex;
+    justify-content: center;
+    margin-block: 3rem;
+    width: 100%;
+}
+
+/**
+ * Styles for the show more button.
+ * Sets the border, color, font size, padding, cursor, and transition properties.
+ */
+.show__btn a {
+    border: 1px solid #b88e2f;
+    color: #b88e2f;
+    font-size: 1.6rem;
+    padding: 1rem 3.4rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.show__btn a:hover {
+    background-color: #b88e2f;
+    color: #fff;
+}
+
+/**
+ * Styles for a grid with 4 columns.
+ * Sets the display, grid template columns, gap, and border properties.
+ */
+.grid__cols-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    border-bottom: 1px solid #9f9f9f;
+}
+
+/**
+ * Styles for the footer header.
+ * Sets the margin property.
+ */
+.footer-header {
+    margin-bottom: 2rem;
+}
+
+/**
+ * Styles for footer header headings.
+ * Sets the font size, color, and font weight properties.
+ */
+.footer-header h2 {
+    font-size: 1.6rem;
+    color: #9f9f9f;
+    font-weight: 600;
+}
+
+/**
+ * Styles for footer links paragraphs.
+ * Sets the font size, font weight, and color properties.
+ */
+.footer__links p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #9f9f9f;
+}
+
+/**
+ * Styles for footer links.
+ * Sets the display, position, padding, cursor, text transformation, color, font size, transition, font weight, and font family properties.
+ */
+.footer__links li a {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 2rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 1.6rem;
+    transition: all 0.4s;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer__links li a:hover {
+    color: #b88e2f;
+}
+
+/**
+ * Styles for the subscribe form.
+ * Sets the display, alignment, and gap properties.
+ */
+.subribe-form {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/**
+ * Styles for the subscribe input.
+ * Sets the width, border, padding, font size, color, and font weight properties.
+ */
+.subribe-input {
+    width: 100%;
+    border-bottom: 1px solid;
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: #9f9f9f;
+    font-weight: 500;
+}
+
+/**
+ * Styles for the subscribe button.
+ * Sets the padding, background color, border, font size, color, font weight, and cursor properties.
+ */
+.subribe-btn {
+    padding: 1rem 1.2rem;
+    background-color: transparent;
+    border-bottom: 1px solid;
+    font-size: 1.4rem;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/**
+ * Removes the outline for the subscribe input when focused.
+ */
+.subribe-input:focus {
+    outline: none;
+}
+
+/**
+ * Styles for the footer top section.
+ * Sets the margin and border properties.
+ */
+.footer-top {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #9f9f9f;
+}
+
+/**
+ * Styles for the copyright text.
+ * Sets the margin, font size, color, and font weight properties.
+ */
+.copy-right p {
+    margin-block: 3rem;
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: 600;
+}
+
+/**
+ * Styles for the breadcrumb section.
+ * Sets the background image, background position, background repeat, background size, height, width, display, alignment, and position properties.
+ */
+.bredcumb {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(/assets/images/brebcumb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 321px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/**
+ * Styles for the breadcrumb content.
+ * Sets the position, alignment, and transform properties.
+ */
+.bredcumb-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/**
+ * Styles for the breadcrumb navigation.
+ * Sets the display, alignment, and margin properties.
+ */
+.bredcum__nav {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/**
+ * Styles for breadcrumb navigation links.
+ * Sets the font size and color properties.
+ */
+/**
+ * Styles for breadcrumb navigation links.
+ * Sets the font size and color properties.
+ */
+.bredcum__nav a {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+/**
+ * Styles for breadcrumb navigation SVG icons.
+ * Sets the height and display properties.
+ */
+.bredcum__nav a svg {
+    height: 18px;
+    display: inline-block;
+}
+
+/**
+ * Styles for the filter section.
+ * Sets the background color, display, alignment, and padding properties.
+ */
+.filter-section {
+    background-color: #f9f1e7;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1rem;
+}
+
+/**
+ * Styles for filter items.
+ * Sets the width, display, alignment, and margin properties.
+ */
+.filter__items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 5rem;
+}
+
+/**
+ * Styles for filter icons.
+ * Sets the display, gap, border, padding, and cursor properties.
+ */
+.filter-icons {
+    display: flex;
+    gap: 3rem;
+    border-right: 1px solid #333333;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+/**
+ * Styles for specific filter icons.
+ * Sets the display, alignment, gap, and font size properties.
+ */
+.filter-icons li:nth-child(1),
+.filter-icons li:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+}
+
+/**
+ * Styles for the first filter section.
+ * Sets the display, alignment, and gap properties.
+ */
+.filter-section1 {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+/**
+ * Styles for filter text box paragraphs.
+ * Sets the font size, font weight, and color properties.
+ */
+.filter__textbox p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #333333;
+}
+
+/**
+ * Styles for the filter text box.
+ * Sets the display property.
+ */
+.filter__textbox {
+    display: flex;
+}
+
+/**
+ * Styles for individual filter items.
+ * Sets the display, alignment, and gap properties.
+}
+. */
+.filter__item {
+    display: flex;
+    gap: 2rem;
+}
+/**
+ * Styles for filter item labels.
+ * Sets the font size, display, alignment, gap, and text transformation properties.
+ */
+.filter-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.filter-text p,
+.filter-text span {
+    display: inline-block;
+    width: 70%;
+    font-size: 1.4rem;
+}
+
+/**
+ * Styles for filter item select elements.
+ * Sets the padding, font size, font weight, color, and cursor properties.
+ */
+.filter__item select {
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #9f9f9f;
+    cursor: pointer;
+}
+
+/**
+ * General styles for select elements.
+ * Sets the appearance and padding properties.
+ */
+select {
+    -webkit-appearance: none; /* For Chrome, Safari, and Opera */
+    -moz-appearance: none; /* For Firefox */
+    appearance: none; /* For other browsers */
+    padding-right: 1.5rem; /* Add some padding to the right to make space for the custom arrow */
+}
+
+/**
+ * Removes the outline for select elements when focused.
+ */
+select:focus {
+    outline: none;
+}
+
+/**
+ * Styles for the shop next button container.
+ * Sets the display, alignment, margin, and gap properties.
+ */
+.shop-nextbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+/**
+ * Styles for the shop next button.
+ * Sets the padding, border radius, font size, color, background color, display, text alignment, cursor, and transition properties.
+ */
+.shop-nextbtn a {
+    padding: 1.4rem 2.8rem;
+    border-radius: 0.8rem;
+    font-size: 2rem;
+    color: #333333;
+    background-color: #f9f1e7;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+/**
+ * Styles for the shop next button when active, focused, or hovered.
+ * Sets the background color and color properties.
+ */
+.shop-nextbtn a:active,
+.shop-nextbtn a:focus,
+.shop-nextbtn a:hover {
+    background-color: #b88e2f;
+    color: #fff;
+}
+
+/**
+ * Styles for the shop footer top section.
+ * Sets the background color and padding properties.
+ */
+.shop-footer-top {
+    background-color: #f4f3ea;
+    padding-block: 8rem;
+}
+
+/**
+ * Styles for the shop footer contents.
+ * Sets the display, grid template columns, gap, width, and margin properties.
+ */
+.shop__footer-contents {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    width: 120rem;
+    margin-inline: auto;
+}
+
+/**
+ * Styles for individual shop footer content items.
+ * Sets the display, alignment, gap, width, and margin properties.
+ */
+.shop__footer-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    margin-left: 2rem;
+}
+
+/**
+ * Styles for shop footer content headings.
+ * Sets the font size, font weight, color, and line height properties.
+ */
+.shop__footer-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333333;
+    line-height: 1.4;
+}
+
+/**
+ * Styles for shop footer content paragraphs.
+ * Sets the font size, color, and font weight properties.
+ */
+.shop__footer-content p {
+    font-size: 1.6rem;
+    color: #898989;
+    font-weight: 400;
+}
+
+/*  responsive css design for all pages */
+
+/**
+ * Styles for the header section on mobile devices.
+ *  media querries for 923px
+ */
+
+@media (max-width: 1024px) {
+    /* Hide the third image in the call-to-action section */
+    .cta__img3 {
+        display: none;
+    }
+    /* Adjust the grid layout for the call-to-action section */
+    .cta__grid-col-4 {
+        grid-template-columns: 2fr 2fr 1fr !important;
+    }
+    /* Adjust the grid layout for the products section */
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .filter-section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .shop__footer-content {
+        margin-left: 0;
+    }
+    .shop__footer-contents {
+        padding-left: 3rem;
+        grid-template-columns: 1fr;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .prod__long-desc-images {
+        width: 100%;
+        flex-direction: column;
+        padding-inline: 2rem;
+    }
+    .filter__items {
+        width: 100%;
+        display: none;
+    }
+}
+
+/**
+ * Styles for the header section on mobile devices.
+ * Media queries for 923px
+ */
+@media (max-width: 61.25em) {
+    /* Adjust the base font size for the body */
+    body {
+        font-size: 50%;
+    }
+    /* Adjust the grid layout for the call-to-action section */
+    .cta__grid-col-4 {
+        grid-template-columns: 2fr 2fr 1fr !important;
+    }
+    /* Adjust the grid layout for the products section */
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .filter-section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .filter__item {
+        display: none;
+    }
+    .shop__footer-content {
+        margin-left: 0;
+    }
+    .shop__footer-contents {
+        padding-inline: 1.2rem;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .checkout {
+        width: 100% !important;
+        padding-inline: 2rem;
+    }
+    .checkout {
+        width: 80% !important;
+        padding-inline: 2rem;
+        grid-template-columns: 1fr !important;
+    }
+    .total {
+        font-size: 1.6rem !important;
+    }
+    .related-products {
+        grid-template-columns: repeat(2, 1fr) !important;
+        padding-inline: 2rem;
+    }
+
+    .grid-col-2 {
+        grid-template-columns: 1fr !important;
+        padding-inline: 2rem;
+    }
+    .prod__desc-text p {
+        font-size: 2rem !important;
+    }
+    .product-main-image {
+        width: 100% !important;
+        margin-right: 2rem;
+    }
+    .prod__long-desc-img img {
+        width: 100%;
+    }
+
+    .prod__long-desc--text1,
+    .prod__long-desc--text2 {
+        padding-inline: 1rem !important;
+    }
+    .blog-col-2 {
+        grid-template-columns: 1fr !important;
+    }
+    .blog__sidebar--search {
+        display: none;
+    }
+
+    .features-post {
+        padding-inline: 2rem;
+    }
+
+    .cart {
+        flex-direction: column;
+    }
+    .cart-items-tabel {
+        width: 100%;
+    }
+}
+
+/**
+ * Styles for the header section on mobile devices.
+ * Media queries for 800px
+ */
+@media screen and (max-width: 50em) {
+    /* Adjust the grid layout for the call-to-action section */
+    .cta__grid-col-4 {
+        grid-template-columns: 1fr !important;
+        padding-inline: 1rem;
+    }
+    /* Adjust the padding and background properties for the first call-to-action image */
+    .cta__img1 {
+        padding-block: 10rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+    }
+    /* Adjust the height for the second call-to-action image */
+    .cta__img2 img {
+        height: 50%;
+    }
+    /* Adjust the grid layout for the products section */
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        padding-inline: 1rem;
+    }
+    /* Adjust the font size for the call-to-action text content */
+    .cta__textbox-content p {
+        font-size: 2.8rem !important;
+    }
+    /* Adjust the font size for the call-to-action heading */
+    .cta__textbox-content h1 {
+        font-size: 4rem;
+    }
+    /* Adjust the layout for the filter section on smaller screens */
+    .filter-section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* Hide filter items on smaller screens */
+    .filter__item {
+        display: none;
+    }
+    /* Adjust the layout for the shop footer top section on smaller screens */
+    .shop-footer-top {
+        flex-direction: column;
+    }
+    /* Adjust the grid layout for the shop footer contents on smaller screens */
+    .shop__footer-contents {
+        padding-inline: 1.2rem;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    /* Adjust the width and padding for the checkout section on smaller screens */
+    .checkout {
+        width: 100% !important;
+        padding-inline: 2rem;
+    }
+    /* Ensure the checkout section uses a single column layout on smaller screens */
+    .checkout {
+        width: 100% !important;
+        padding-inline: 2rem;
+        grid-template-columns: 1fr !important;
+    }
+    .prod__tabs {
+        flex-direction: column;
+        gap: 1rem !important;
+    }
+    .product-gallary {
+        flex-direction: row !important;
+    }
+    .product-images {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .cart-items-tabel {
+        width: 100%;
+        max-width: 100%;
+        overflow-y: scroll;
+    }
+}
+
+/**
+ * Media queries for 800px
+ */
+@media screen and (max-width: 44em) {
+    /* Adjust the base font size for the body */
+    body {
+        font-size: 40%;
+    }
+    /* Adjust the layout for the catalog items */
+    .cata__items {
+        flex-direction: column;
+        padding-inline: 1rem;
+    }
+    /* Adjust the font size for the catalog item headings */
+    .cata__item h3 {
+        font-size: 3rem !important;
+    }
+    /* Adjust the layout and height for the hero section */
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+    }
+    /* Adjust the width and positioning for the hero content */
+    .hero__content {
+        width: 100% !important;
+        right: 0% !important;
+        left: 0% !important;
+        margin-inline: auto !important;
+        margin-right: 0 !important;
+    }
+    /* Adjust the grid layout for the 4-column grid */
+    .grid__cols-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Adjust the width for the header */
+    .header {
+        width: 100%;
+    }
+    /* Adjust the positioning for the navbar */
+    .navbar {
+        position: relative;
+    }
+    /* Adjust the layout and positioning for the navigation links */
+    .nav__links {
+        position: absolute;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        top: 2%;
+        margin-top: -14;
+        background-color: #b88e2f;
+        width: 50%;
+        height: 100vh;
+        text-align: left;
+        margin-left: -14;
+        display: none;
+        transition: all 0.4s;
+        animation: slideinleft 0.4s;
+    }
+
+    @keyframes slideinleft {
+        from {
+            transform: translateX(-100%);
+        }
+    }
+
+    #nav__checkbox {
+        display: none;
+    }
+
+    #nav__checkbox:checked ~ .nav__links {
+        display: block;
+    }
+    /* Adjust the margin for the first navigation link */
+    .nav__links li:nth-child(1) {
+        margin-top: 5rem;
+    }
+    /* Adjust the font size and color for the navigation links */
+    .nav__links li a {
+        text-align: left;
+        font-size: 3rem;
+        color: #f4f3ea;
+    }
+    /* Adjust the display and positioning for the open navigation icon */
+    .opennav {
+        display: block;
+        color: #333333;
+        height: 5rem;
+        width: 4rem;
+        margin-right: 0.8rem;
+    }
+    /* Adjust the positioning for the navigation icons */
+    .nav__icons {
+        position: absolute;
+        left: 60%;
+        /* Adjust the layout for the filter section on smaller screens */
+        .filter-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+            overflow: hidden;
+            display: none;
+        }
+        /* Hide filter items on smaller screens */
+        .filter__item {
+            display: none;
+            width: 100%;
+        }
+        /* Adjust the grid layout for the shop footer contents on smaller screens */
+        .shop__footer-contents {
+            grid-template-columns: 1fr;
+            width: 100%;
+            padding-inline: 1.2rem;
+        }
+        /* Adjust the width for filter items on smaller screens */
+        .filter__items {
+            width: 100%;
+        }
+        /* Adjust the width and padding for the checkout section on smaller screens */
+        .checkout {
+            width: 100% !important;
+            padding-inline: 2rem;
+            grid-template-columns: 1fr !important;
+        }
+
+        .related-products {
+            grid-template-columns: 1fr !important;
+            padding-inline: 2rem;
+        }
+        .product-images {
+            flex-direction: column;
+        }
+    }
+}
+
+/**
+ * Media queries for smaller devices
+ */
+@media (max-width: 32em) {
+    /* Adjust the grid layout for the products section */
+    .products {
+        grid-template-columns: 1fr;
+        padding-inline: 1rem;
+    }
+    /* Adjust the font size and padding for the hero content heading */
+    .hero__content h1 {
+        font-size: 4rem !important;
+        padding-block: 1rem;
+    }
+    /* Adjust the padding and margin for the header logo */
+    .header__logo {
+        padding-right: 1rem;
+        margin-right: 2rem;
+    }
+    /* Adjust the width, height, and padding for the header logo image */
+    .header__logo img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        padding-right: 1rem;
+    }
+    /* Adjust the gap and margin for the navigation icons */
+    .nav__icons {
+        gap: 1rem;
+        margin-left: 1rem;
+    }
+    /* Hide specific navigation icons */
+    .nav__icons svg:nth-child(2),
+    .nav__icons svg:nth-child(3) {
+        display: none;
+    }
+    /* Adjust the font size and padding for the hero content paragraph */
+    .hero__content p {
+        font-size: 1.8rem !important;
+        padding-right: 1rem !important;
+    }
+    /* Adjust the font size for the call-to-action heading */
+    .cta__textbox-content h1 {
+        font-size: 3rem;
+    }
+    /* Adjust the font size for the call-to-action text content */
+    .cta__textbox-content p {
+        font-size: 1.8rem !important;
+    }
+    /* Adjust the height for the second call-to-action image */
+    .cta__img2 {
+        height: 100%;
+    }
+    /* Adjust the padding for the call-to-action grid */
+    .cta__grid-col-4 {
+        padding-bottom: 0rem !important;
+    }
+    /* Adjust the grid layout for the 4-column grid */
+    .grid__cols-4 {
+        grid-template-columns: 1fr;
+    }
+    /* Adjust the layout for the subscribe form */
+    .subribe-form {
+        display: flex;
+        flex-direction: column !important;
+        align-items: flex-start;
+    }
+    /* Hide filter items on smaller screens */
+    .filter__item {
+        display: none;
+    }
+    /* Adjust the grid layout for the shop footer contents on smaller screens */
+    .shop__footer-contents {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    /* Hide the filter text box on smaller screens */
+    .filter__textbox {
+        display: none;
+    }
+    /* Adjust the width and padding for the checkout section on smaller screens */
+    .checkout {
+        width: 100% !important;
+        padding-inline: 2rem;
+        grid-template-columns: 1fr !important;
+    }
+
+    .related-products {
+        grid-template-columns: 1fr !important;
+        padding-inline: 2rem;
+    }
+
+    .product-main-image {
+        width: 100% !important;
+        margin-right: 3rem;
+    }
+}
