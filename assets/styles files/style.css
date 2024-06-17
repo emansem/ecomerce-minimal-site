@@ -20,6 +20,9 @@
 .checkout-overlay {
     display: none;
 }
+#nav__checkbox{
+    display: none;
+}
 
 /**
  * Styles for the content within the hero section.
